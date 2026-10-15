@@ -1,0 +1,5 @@
+\copy dealers FROM 'data/dealers.csv' WITH (FORMAT csv, HEADER true)
+\copy products FROM 'data/products.csv' WITH (FORMAT csv, HEADER true)
+\copy customers FROM 'data/customers.csv' WITH (FORMAT csv, HEADER true)
+\copy orders FROM 'data/orders.csv' WITH (FORMAT csv, HEADER true)
+\copy inventory FROM 'data/inventory.csv' WITH (FORMAT csv, HEADER true)
