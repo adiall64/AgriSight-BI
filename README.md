@@ -20,7 +20,7 @@ python3 src/generate_data.py
 python3 src/validate_data.py
 python3 -m unittest discover -s tests -v
 ```
-The generator creates five CSVs in `data/` and two Tableau-friendly extracts in `tableau/`.
+The generator creates five CSVs in `data/` and two Tableau-friendly extracts in `tableau/`. **Generated CSV files are not currently stored in this GitHub repository; run the generator before opening the Tableau files or importing into PostgreSQL.**
 
 ## Tableau dashboards
 Connect Tableau to `tableau/sales_fact.csv`, then follow [the Tableau build guide](tableau/BUILD_DASHBOARD.md). Use `tableau/inventory_snapshot.csv` as a **separate** data source to avoid duplicated inventory when joining to transactional orders.
@@ -43,4 +43,4 @@ Seeded synthetic data generation, key and date checks, financial reconciliation,
 This is a learning and demonstration project. The dataset, dealer names, transactions, and financial figures are entirely fictional. It should not be described as AGCO work or a real business engagement.
 
 ## Status
-Code and reproducible data-generation pipeline are provided. Tableau workbook and screenshots must be built in Tableau and added separately.
+Source code and reproducible data-generation pipeline are provided. Generate the synthetic CSVs locally. Tableau workbook and screenshots must be built in Tableau and added separately.
